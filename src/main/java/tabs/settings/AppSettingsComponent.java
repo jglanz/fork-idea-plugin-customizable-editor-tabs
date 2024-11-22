@@ -2,6 +2,7 @@
 
 package tabs.settings;
 
+import com.intellij.ui.ColorChooserService;
 import com.intellij.ui.components.BrowserLink;
 import com.intellij.ui.components.JBCheckBox;
 import com.intellij.ui.components.JBLabel;
@@ -169,7 +170,7 @@ public class AppSettingsComponent {
                                           @Override
                                         public void actionPerformed(ActionEvent e) {
 
-                                            ColorChooserServiceImpl.getInstance().showColorPickerPopup(null, tabsColorFinal,
+                                            ColorChooserService.getInstance().showColorPickerPopup(null, tabsColorFinal,
                                                     tabsListener, null, false);
 
                                           }
@@ -182,7 +183,7 @@ public class AppSettingsComponent {
                                           @Override
                                                public void actionPerformed(ActionEvent e) {
 
-                                                   ColorChooserServiceImpl.getInstance().showColorPickerPopup(null, selectedTabColorBtnColorFinal,
+                                              ColorChooserService.getInstance().showColorPickerPopup(null, selectedTabColorBtnColorFinal,
                                                            selectedTabListener, null, false);
 
                                                  }
@@ -196,7 +197,7 @@ public class AppSettingsComponent {
                                            @Override
                                            public void actionPerformed(ActionEvent e) {
 
-                                               ColorChooserServiceImpl.getInstance().showColorPickerPopup(null, textColorFinal,
+                                               ColorChooserService.getInstance().showColorPickerPopup(null, textColorFinal,
                                                        textListener, null, false);
 
                                            }
@@ -209,7 +210,7 @@ public class AppSettingsComponent {
                                                   @Override
                                                   public void actionPerformed(ActionEvent e) {
 
-                                                      ColorChooserServiceImpl.getInstance().showColorPickerPopup(null, selectedTextColorBtnColorFinal,
+                                                      ColorChooserService.getInstance().showColorPickerPopup(null, selectedTextColorBtnColorFinal,
                                                               selectedTextListener, null, false);
 
                                                   }
