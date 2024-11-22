@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "customizable_editor_tabs"
+rootProject.name = "zen_editor"
